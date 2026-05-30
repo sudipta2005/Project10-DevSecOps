@@ -1,5 +1,5 @@
 import subprocess
 
-user_input = input("Enter command: ")
+command = ["ls"]
 
-subprocess.call(user_input, shell=True)
+subprocess.run(command, check=True)
